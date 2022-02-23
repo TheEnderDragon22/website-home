@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+
+        <title>Oliver's Website</title>
+
+        <style>
+
+            h4 {
+                font-size: 20px;
+            }
+
+            body {
+                position:absolute;
+                font-family: 'Inconsolata', monospace;
+                background: url("white-background.jpg");
+                padding: 0px;
+                margin: 0px;
+            }
+
+            h1,h2,h3 {
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+            }
+
+            h2 {
+                text-align: center;
+                font-size:35px;
+            }
+
+            h1 {
+                font-weight: 50;
+                color:#00f7ff;
+                float: right;
+                text-align: left;
+                font-size: 20px;
+                padding-right: 20px;
+            }
+
+            .container {
+                position: relative;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
+
+            .centered {
+                color:rgb(255, 255, 255);
+                position: absolute;
+                bottom: 53%;
+                left: 20%;
+                border-top: 1px solid rgb(255, 255, 255);
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                font-weight: 50;
+                font-family: 'Segoe UI';
+                padding-bottom: 10px;
+            }
+
+            #centered2 {
+                position:absolute;
+                border-bottom: 1px solid white;
+                font-weight:50;
+                font-family: 'Segoe UI';
+                bottom: 50%;
+                font-size: 25px;
+                left:11.1%;
+                padding-right:78px;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .menu {
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+                position:fixed;
+                top: 0;
+                width: 100%;
+                box-shadow:0px 5px 10px rgb(0, 0, 0);  
+            }
+
+            .menu a {
+                float: left;
+                color: #00f7ff;
+                text-align: center;
+                padding: 15px 15px;
+                text-decoration: none;
+                font-size: 16px;
+                transition-duration: 0.3s;
+            }
+
+            .menu a:hover {
+                background: rgb(48, 48, 48);
+                color: rgb(255, 255, 255);
+            }
+
+            #button a {
+                display:block;
+                text-decoration: none;
+                position: absolute;
+                bottom:35%;
+                left:11.1%;
+                text-align:center;
+                background-color: black;
+                color:white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right:106.5px;
+                padding-left:106.5px;
+                border-radius:15px;
+                transition-duration: 0.3s;
+            }
+            #button a:hover {
+                background:rgb(48, 48, 48);
+                color:rgb(255, 255, 255);
+            }
+
+            .about-me {
+                display: block;
+                width: 100%;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                padding-bottom: 55px;
+            }
+
+            #about-me-text {
+                padding-left:900px;
+                padding-right: 100px
+            }
+
+            .image {
+                padding-left: 250px;
+                float: left;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: fixed;
+                background-color: #000000;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 3;
+            }
+            
+            .dropdown-content a {
+                float:none;
+                display: block;
+                position: relative;
+                text-align: left;
+                font-size: 12.5px;
+            }
+
+            .dropdown > span {
+                padding: 0px 15px;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                padding: 15px 0px;
+                color:#00f7ff;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+                position: fixed;
+                margin-top: 15px;
+            }
+
+            .dropdown:hover {
+                display: inline-block;
+                background-color:rgb(48, 48, 48);
+                transition-duration: 0.4s;
+            }
+
+            #name {
+                float:right;
+            }
+
+            .footer {
+                color: #00f7ff;
+                position:relative;
+                background-color: rgb(0, 0, 0);
+                padding-bottom: 30px;
+            }
+            
+            .column {
+                color:rgb(255, 255, 255);
+                display:inline-block;
+                margin-top: 30px;
+                padding-left: 100px;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .video {
+                text-align:center;
+                width: 100%;
+                float:none;
+                color:#000000;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <img src="Untitled design (2).png" alt="Background" style="width:100%;">
+            <div class="centered">Hi, I'm Oliver.</div>
+            <div id="centered2"><p>This is my website.</p></div>
+            <h4 id="button"><a href="#about-me-text">About Me</a></h4>
+        </div>
+
+        <div class="menu">
+            <div class="menu-button">
+                <a href="#home">HOME</a>
+                <a href="https://www.youtube.com/channel/UCfmo8wbps8_svT8PlwjJxSw">YOUTUBE</a>
+                <a href="https://www.twitch.tv/theenderdragon22_yt">TWITCH</a>
+                <a href="/">VIDEOS</a>
+            </div>
+            <div class="dropdown">
+                <span>SOCIALS</span>
+                <div class="dropdown-content">
+                    <a href="https://www.instagram.com/olliesbookreviews/">INSTAGRAM</a>
+                    <a href="https://www.discord.gg/z6Hbqj3Gcv">DISCORD</a>
+                    <a href="https://www.scratch.mit.edu/users/cs3990205">SCRATCH</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <span>COLLABS</span>
+                <div class="dropdown-content">
+                    <a href="https://www.youtube.com/">ItzAce249</a>
+                </div>
+            </div>
+            <h1 id="name">Oliver's Website</h1>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div class="video">
+            <h2 id="welcome">Welcome to my channel!</h2>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/Uedc3JsL4m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="body">
+            <div class="about-me">
+                <div class="image">
+                    <img src="sayagata-400px.png">
+                </div>
+                <div id="about-me-text">
+                    <h2>About Me</h2>
+                    <p>TheEnderDragon22 Team has many fun things to do, like chat with others, chat about Minecraft or Minecraft Dungeons, and play with some bots! One of the bots even is Minecraft related! You can talk about Minecraft Dungeons, ask what enchants to put on your gear, look for other people to play with, and trade with others! The best thing about the Minecraft Dungeons section is that you can also come up with ideas for the game! I hope you join the server and if you do, I will see you there!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="column">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>School Email: 102-OHadimulya@sd43.bc.ca</li>
+                    <li>Regular Email: Oliver.Hadimulya@gmail.com</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Socials</h3>
+                    <a href="https://www.youtube.com/channel/UCfmo8wbps8_svT8PlwjJxSw"><img src="Youtube_icon.png" width="24"></a>
+                    <a href="https://www.instagram.com/olliesbookreviews/"><img src="Instagram_icon.png" width="24"></a>
+                    <a href="https://www.discord.gg/z6Hbqj3Gcv"><img src="Discord_icon.png" width="24"></a>
+                    <a href="https://www.twitch.tv/theenderdragon22_yt"><img src="Twitch_icon.png" width="24"></a>
+            </div>
+
+        </div>
+
+    </body>
+</html> 
